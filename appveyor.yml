@@ -21,7 +21,6 @@ before_build:
 
 build_script:
 - cmd: dotnet build src/Hangfire.Console.LogExtension -c Release
-- cmd: dotnet build tests/Hangfire.Console.LogExtension -c Releasez
 
 after_build:
 - cmd: dotnet pack src/Hangfire.Console.LogExtension -o ../../artifacts -c Release
