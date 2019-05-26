@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>AChehre</Authors>
+    <PackageProjectUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</RepositoryUrl>
+    <PackageTags>hangfire;console;logging</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
