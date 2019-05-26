@@ -19,13 +19,34 @@ namespace Hangfire.Console.LogExtension
             CriticalColor = ConsoleTextColor.DarkRed;
             DefaultColor = ConsoleTextColor.White;
         }
-
+        /// <summary>
+        /// Trace log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor TraceColor { get; set; }
+        /// <summary>
+        /// Trace log color on Hangfire.Console.
+        /// </summary>
+
         public ConsoleTextColor DebugColor { get; set; }
+        /// <summary>
+        /// Information log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor InformationColor { get; set; }
+        /// <summary>
+        /// Warning log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor WarningColor { get; set; }
+        /// <summary>
+        /// Error log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor ErrorColor { get; set; }
+        /// <summary>
+        /// Critical log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor CriticalColor { get; set; }
+        /// <summary>
+        /// Default log color on Hangfire.Console.
+        /// </summary>
         public ConsoleTextColor DefaultColor { get; set; }
 
 
