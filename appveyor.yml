@@ -1,0 +1,39 @@
+version: 1.4.2-{build}
+
+os: Visual Studio 2019
+
+nuget:
+  account_feed: false
+  
+branches:
+  only:
+  - master
+  - dev
+
+pull_requests:
+  do_not_increment_build_number: true
+
+init:
+- git config --global core.autocrlf true
+
+before_build:
+- cmd: dotnet restore
+
+build_script:
+- cmd: dotnet build src/Hangfire.Console.LogExtension -c Release
+- cmd: dotnet build tests/Hangfire.Console.LogExtension -c Releasez
+
+after_build:
+- cmd: dotnet pack src/Hangfire.Console.LogExtension -o ../../artifacts -c Release
+
+artifacts:
+- path: 'artifacts/**/*.nupkg'
+
+deploy:
+- provider: NuGet
+  api_key:
+    secure:  %NuGetSecurityKey%
+  skip_symbols: true
+  on:
+    branch: master
+    appveyor_repo_tag: true
