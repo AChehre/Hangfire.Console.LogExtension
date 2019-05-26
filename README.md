@@ -1,4 +1,4 @@
-# Hangfire.Console
+# Hangfire.Console.LogExtension
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nikg8c29rena889v/branch/master?svg=true)](https://ci.appveyor.com/project/AChehre/hangfire-console-logextension/branch/master)
 [![NuGet](https://img.shields.io/nuget/v/Hangfire.Console.LogExtension.svg)](https://www.nuget.org/packages/Hangfire.Console.LogExtension/)
@@ -48,6 +48,7 @@ IHangFireLogger logger
 public void TaskMethod(PerformContext context)
 {
     logger.SetPerformContext(context);
+	
 	logger.LogInformation("Log Information");
 	logger.LogDebug("Log Debug");
 	logger.LogError("Log Error");
@@ -57,4 +58,4 @@ public void TaskMethod(PerformContext context)
 
 ## Progress bars
 
-Hangfire.Console has a feature that it thows a nice progress bar on console, and I am still working on it
+Hangfire.Console has a feature that it shows a nice progress bar on console, and I am still working on it
