@@ -6,6 +6,7 @@
     <PackageProjectUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</RepositoryUrl>
     <PackageTags>hangfire;console;logging</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
