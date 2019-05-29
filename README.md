@@ -5,7 +5,6 @@
 
 Hangfire.Console.LogExtension is an extension for Hangfire.Console package that provides a wrapper on ILogger for logging on Hangfire.Console and .Net log provider at the same time.
 
-!
 ## Setup
 
 In .NET Core's Startup.cs:
