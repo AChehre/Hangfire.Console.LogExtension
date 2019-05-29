@@ -1,13 +1,11 @@
 # Hangfire.Console.LogExtension
 
-[![Build status](https://ci.appveyor.com/api/projects/status/nikg8c29rena889v/branch/master?svg=true)](https://ci.appveyor.com/project/AChehre/hangfire-console-logextension/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/pb6206ush618h7a9/branch/master?svg=true)](https://ci.appveyor.com/project/AChehre/hangfire-console-logextension/branch/master)
 [![NuGet](https://img.shields.io/nuget/v/Hangfire.Console.LogExtension.svg)](https://www.nuget.org/packages/Hangfire.Console.LogExtension/)
 
 Hangfire.Console.LogExtension is an extension for Hangfire.Console package that provides a wrapper on ILogger for logging on Hangfire.Console and .Net log provider at the same time.
 
-![dashboard](dashboard.png)
-
-
+!
 ## Setup
 
 In .NET Core's Startup.cs:
