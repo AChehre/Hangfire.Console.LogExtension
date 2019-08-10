@@ -14,8 +14,8 @@ public void ConfigureServices(IServiceCollection services)
     services.AddHangfire(config =>
     {
         config.UseSqlServerStorage("connectionSting");
-        config.UseConsoleLogger();
-    });
+	config.UseConsole();
+    }).UseConsoleLogger();
 }
 ```
 
