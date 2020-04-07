@@ -3,11 +3,11 @@ using Microsoft.Extensions.Logging;
 
 namespace Hangfire.Console.LogExtension
 {
-    public interface IHangFireLogger<out T> : IHangFireLogger, ILogger<T>
+    public interface IHangfireLogger<out T> : IHangfireLogger, ILogger<T>
     {
     }
 
-    public interface IHangFireLogger : ILogger
+    public interface IHangfireLogger : ILogger
     {
         void SetPerformContext(PerformContext performContext);
     }

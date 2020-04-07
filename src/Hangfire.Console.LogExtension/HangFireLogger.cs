@@ -5,13 +5,13 @@ using Microsoft.Extensions.Logging;
 
 namespace Hangfire.Console.LogExtension
 {
-    public class HangFireLogger : IHangFireLogger
+    public class HangfireLogger : IHangfireLogger
     {
         protected readonly ILogger Logger;
         protected readonly ConsoleLoggerOptions Options;
         protected PerformContext PerformContext;
 
-        public HangFireLogger(ILogger logger, ConsoleLoggerOptions options)
+        public HangfireLogger(ILogger logger, ConsoleLoggerOptions options)
         {
             Options = options;
             Logger = logger;
@@ -50,12 +50,12 @@ namespace Hangfire.Console.LogExtension
     }
 
 
-    public class HangFireLogger<T> : HangFireLogger, IHangFireLogger<T>
+    public class HangfireLogger<T> : HangfireLogger, IHangfireLogger<T>
     {
         private readonly ILogger<T> _logger;
 
 
-        public HangFireLogger(ILogger<T> logger, ConsoleLoggerOptions options) : base(logger, options)
+        public HangfireLogger(ILogger<T> logger, ConsoleLoggerOptions options) : base(logger, options)
         {
             _logger = logger;
         }

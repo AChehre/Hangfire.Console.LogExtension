@@ -18,8 +18,7 @@ namespace Hangfire.Console.LogExtension
 
 
             serviceCollection.AddSingleton(options);
-            serviceCollection.AddScoped<IHangFireLogger, HangFireLogger>();
-            serviceCollection.AddScoped(typeof(IHangFireLogger<>), typeof(HangFireLogger<>));
+            serviceCollection.AddScoped(typeof(IHangfireLogger<>), typeof(HangfireLogger<>));
         }
     }
 }

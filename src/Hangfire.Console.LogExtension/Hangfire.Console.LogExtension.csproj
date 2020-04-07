@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>AChehre</Authors>
+    <Authors>Ahmad Chehreghani</Authors>
     <PackageProjectUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AChehre/Hangfire.Console.LogExtension</RepositoryUrl>
-    <PackageTags>hangfire;console;logging</PackageTags>
-    <Version>1.0.1</Version>
+    <PackageTags>hangfire;console;logging;log</PackageTags>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
